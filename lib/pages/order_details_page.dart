@@ -1,9 +1,9 @@
-import 'package:agriplant/models/order.dart';
-import 'package:agriplant/utils/extensions/date.dart';
-import 'package:agriplant/widgets/order_item.dart';
 import 'package:easy_stepper/easy_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:plant_ui/models/order.dart';
+import 'package:plant_ui/utils/extensions/date.dart';
+import 'package:plant_ui/widgets/order_item.dart';
 
 class OrderDetailsPage extends StatelessWidget {
   const OrderDetailsPage({

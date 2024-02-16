@@ -1,7 +1,7 @@
-import 'package:agriplant/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:plant_ui/pages/home_page.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -21,7 +21,10 @@ class OnboardingPage extends StatelessWidget {
               ),
               const Spacer(),
               Text('Welcome to Agriplant',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge
+                      ?.copyWith(fontWeight: FontWeight.bold)),
               const Padding(
                 padding: EdgeInsets.only(top: 30, bottom: 30),
                 child: Text(
@@ -32,7 +35,8 @@ class OnboardingPage extends StatelessWidget {
               /**/
               FilledButton.tonalIcon(
                 onPressed: () {
-                  Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (context) => const HomePage()));
+                  Navigator.of(context).pushReplacement(CupertinoPageRoute(
+                      builder: (context) => const HomePage()));
                 },
                 icon: const Icon(IconlyLight.login),
                 label: const Text("Continue with Google"),

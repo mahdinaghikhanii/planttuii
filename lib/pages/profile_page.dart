@@ -1,6 +1,6 @@
-import 'package:agriplant/pages/orders_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:plant_ui/pages/orders_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

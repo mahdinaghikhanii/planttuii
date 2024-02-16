@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:agriplant/data/orders.dart';
-import 'package:agriplant/widgets/order_item.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_ui/data/orders.dart';
+import 'package:plant_ui/widgets/order_item.dart';
 
 class OrdersPage extends StatelessWidget {
   const OrdersPage({super.key});

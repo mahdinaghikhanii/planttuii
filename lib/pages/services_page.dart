@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:agriplant/data/services.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_ui/data/services.dart';
 
 class ServicesPage extends StatelessWidget {
   const ServicesPage({super.key});
@@ -34,7 +34,8 @@ class ServicesPage extends StatelessWidget {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
                 child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.2),
                     borderRadius: const BorderRadius.all(Radius.circular(5)),

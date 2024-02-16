@@ -1,4 +1,4 @@
-import 'package:agriplant/models/product.dart';
+import 'package:plant_ui/models/product.dart';
 
 class Order {
   final String id;

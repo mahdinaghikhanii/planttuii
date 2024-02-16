@@ -1,5 +1,5 @@
-import 'package:agriplant/data/products.dart';
-import 'package:agriplant/models/order.dart';
+import 'package:plant_ui/data/products.dart';
+import 'package:plant_ui/models/order.dart';
 
 List<Order> orders = [
   Order(
