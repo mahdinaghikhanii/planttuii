@@ -109,7 +109,7 @@ class OrderDetailsPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 15),
                   Text(
-                    "Jessi Williams",
+                    "Mahdinaghikhani",
                     style: theme.textTheme.titleSmall
                         ?.copyWith(fontWeight: FontWeight.bold),
                   ),

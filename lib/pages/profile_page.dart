@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:plant_ui/pages/onboarding_page.dart';
 import 'package:plant_ui/pages/orders_page.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -13,24 +14,22 @@ class ProfilePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 20, bottom: 15),
             child: CircleAvatar(
-              radius: 62,
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              child: const CircleAvatar(
-                radius: 60,
-                foregroundImage: NetworkImage(
-                    'https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3386&q=80'),
-              ),
-            ),
+                radius: 62,
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                child: const CircleAvatar(
+                  radius: 60,
+                  backgroundImage: AssetImage('assets/mahdi.jpg'),
+                )),
           ),
           Center(
             child: Text(
-              "Jessi Williams",
+              "mahdi naghikhani",
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
           Center(
             child: Text(
-              "jessiwills@gmail.com",
+              "mahdi@gmail.com",
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ),
@@ -47,6 +46,39 @@ class ProfilePage extends StatelessWidget {
             },
           ),
           ListTile(
+            title: const Text("About me"),
+            leading: const Icon(IconlyLight.profile),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OrdersPage(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: const Text("Settings"),
+            leading: const Icon(IconlyLight.setting),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OrdersPage(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: const Text("Favorite"),
+            leading: const Icon(IconlyLight.heart),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OrdersPage(),
+                  ));
+            },
+          ),
+          ListTile(
             title: const Text("About us"),
             leading: const Icon(IconlyLight.infoSquare),
             onTap: () {},
@@ -54,7 +86,12 @@ class ProfilePage extends StatelessWidget {
           ListTile(
             title: const Text("Logout"),
             leading: const Icon(IconlyLight.logout),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => OnboardingPage()),
+                  (route) => false);
+            },
           ),
         ],
       ),
